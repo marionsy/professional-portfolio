@@ -1,0 +1,181 @@
+@import "https://fonts.googleapis.com/css?family=Lato:100";
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+
+* {
+    font-family: "Lato", Arial, sans-serif;
+    font-weight: bold;
+    background-color: rgb(236, 222, 204);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a:link { 
+    text-decoration: none; 
+}
+
+a:visited { 
+    text-decoration: none; 
+}
+
+a:hover { 
+    text-decoration: none; 
+    color: rgb(213, 170, 177);
+}
+
+a:active { 
+    text-decoration: none; 
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+}
+
+.cactus {
+    position: relative;
+}
+
+.cactus img {
+    max-width: 100%;
+}
+
+.cactus .name {
+    position: absolute;
+    bottom: 20px;
+    margin-left: 15px;
+    background-color: transparent;
+    color: rgb(189, 139, 158);
+    font-size: 35px;
+    font-family: "Montserrat", Arial, sans-serif;
+}
+
+ul {
+    text-align: center;
+    padding: 0px;
+}
+
+li {
+    display: inline;
+    font-size: 15px;
+    margin: 25px;
+    margin-top: 5px;
+}
+
+.body {
+    flex-direction: column;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    font-family: "Montserrat", Arial, sans-serif;
+    text-align: center;
+    text-decoration: .5px dotted black ;
+    margin-bottom: 1%;
+    margin-top: 3%;
+    font-size: 30pt;
+    letter-spacing: 2px;
+    color: rgb(236, 222, 204);
+    text-shadow: #000 0px 0px 1px,   #000 0px 0px 1px,   #000 0px 0px 1px,
+    #000 0px 0px 1px,   #000 0px 0px 1px,   #000 0px 0px 1px;
+}
+
+h1:hover {
+    color: rgb(213, 170, 177);
+    text-shadow: inset 0px 0px 8px pink;
+    transition: all 0.5s ease-in-out;
+    
+}
+
+.marion {
+    border-radius: 50%;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.bio {
+    width: 400px;
+    margin: auto;
+    margin-bottom: 5%;
+    line-height: 1.5;
+}
+
+.icon {
+    border-radius: 40px;
+    transition: all 0.5s ease-in-out;
+}
+
+.icon:hover, 
+.icon:hover header {
+    box-shadow: inset 0px 0px 8px
+    rgba(255, 192, 203, 1), 0 0 15px
+    rgba(255, 192, 203, 1);
+}
+
+.project-container {
+    position:relative;
+}
+
+.project-container .text-box {
+    position: absolute;
+    bottom: 20px;
+    margin-left: 15px;
+    background-color: transparent;
+    color: white;
+}
+
+.project-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-project, .other-projects {
+    margin: 40px;
+}
+
+.links {
+    text-align: center;
+    margin-top: 4%;
+    margin-left: auto;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 5%;
+    font-size: 15px;
+}
+
+
+@media (max-width: 992px) {
+    .body {
+        flex-direction: column;
+        grid-template-columns: 50% 50%;
+        /* font-size: smaller; */
+    }
+
+    .project-section {
+        flex-direction: column;
+    }
+
+    .other-projects {
+        display: flex;
+    }
+}
+
+@media (max-width: 768px) {
+    .body {
+        flex-direction: column;
+        grid-template-columns: 100%;
+    }
+
+    .other-projects {
+        flex-direction: column;
+    }
+}
