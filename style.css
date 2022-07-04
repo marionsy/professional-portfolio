@@ -1,7 +1,9 @@
+/* Added styled fonts to page */
 @import "https://fonts.googleapis.com/css?family=Lato:100";
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
 
+/* Universal page styles *//
 * {
     font-family: "Lato", Arial, sans-serif;
     font-weight: bold;
@@ -12,6 +14,7 @@ html {
     scroll-behavior: smooth;
 }
 
+/* Link styling */
 a:link { 
     text-decoration: none; 
 }
@@ -29,6 +32,7 @@ a:active {
     text-decoration: none; 
 }
 
+/* Header styling */
 .header {
     display: flex;
     justify-content: center;
@@ -52,6 +56,7 @@ a:active {
     font-family: "Montserrat", Arial, sans-serif;
 }
 
+/* Navigation */
 ul {
     text-align: center;
     padding: 0px;
@@ -64,6 +69,7 @@ li {
     margin-top: 5px;
 }
 
+/* Main portfolio content */
 .body {
     flex-direction: column;
 }
@@ -146,18 +152,18 @@ h1:hover {
     margin-left: auto;
 }
 
+/* Footer */
 .footer {
     text-align: center;
     margin-top: 5%;
     font-size: 15px;
 }
 
-
+/* Media queries for a responsive layout */
 @media (max-width: 992px) {
     .body {
         flex-direction: column;
         grid-template-columns: 50% 50%;
-        /* font-size: smaller; */
     }
 
     .project-section {
